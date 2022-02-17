@@ -12,7 +12,7 @@ do
         fi
     else
         if [ $battery_level -le 40 ]; then
-            notify-send -u high "Battery is lower 40%. Need to charge! Please plug your AC adapter." "Charging: ${battery_level}%"
+            notify-send -u normal "Battery is low!. Need to charge! Please plug your AC adapter." "Discharging: ${battery_level}%"
             sleep 20
         fi
     fi
